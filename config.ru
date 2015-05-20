@@ -1,2 +1,2 @@
-require './index.html'
+require './coffee.rb'
 run Sinatra::Application

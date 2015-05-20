@@ -13,6 +13,7 @@ end
 
 
   get '/' do
+  	"in the get function"
   content_type :json
   instance = CoffeeNow.new
   instance.set_number_of_cups(99)
