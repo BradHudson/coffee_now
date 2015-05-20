@@ -1,1 +1,1 @@
-run lambda { |env| [200, {'Content-Type'=>'text/plain'}, StringIO.new("Hello World!\n")] }
+run lambda { |env| [200, {'Content-Type'=>'text/plain'}, StringIO.new("this is config.ru!\n")] }
