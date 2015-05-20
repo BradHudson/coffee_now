@@ -9,11 +9,17 @@ module CoffeeNow
 
 	  post '/order' do
 	  	set_number_of_cups(:num_cups)
-	  	set_name(:name)
+	  	set_name(:user_name)
+	  	set_drink(:drink)
+	  	get_order_status
 	  end
 
 	  def set_number_of_cups(cups)
 	  	@cups = cups
+	  end
+
+	  def set_drink(drink)
+	  	@drink = drink
 	  end
 
 	  def set_name(name)
@@ -21,7 +27,7 @@ module CoffeeNow
 	  end
 	 
 	  def get_order_status()
-	  	{ cups_ordered: @cups, name: @name }.to_json
+	  	{ drink: @drink, name: @name }.to_json
 	  end
 	end
 end
