@@ -1,1 +1,2 @@
-run lambda { |env| [200, {'Content-Type'=>'text/plain'}, StringIO.new("this is config.ru!\n")] }
+require './index.html'
+run Sinatra::Application
