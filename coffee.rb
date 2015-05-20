@@ -8,9 +8,9 @@ module CoffeeNow
 	  end
 
 	  post '/order' do
-	  	set_number_of_cups(:num_cups)
-	  	set_name(:user_name)
-	  	set_drink(:drink)
+	  	set_number_of_cups(params[:num_cups])
+	  	set_name(params[:user_name])
+	  	set_drink(params[:drink])
 	  	get_order_status
 	  end
 
