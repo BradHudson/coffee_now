@@ -5,7 +5,7 @@ module CoffeeNow
 	  get '/' do
 		content_type :json
 		set_number_of_cups(99)
-		{ cups_ordered: instance.get_order_status }.to_json
+		{ cups_ordered: get_order_status }.to_json
 	  end
 	  def set_number_of_cups(cups)
 	  	@cups = cups
