@@ -27,7 +27,8 @@ module CoffeeNow
 	  end
 	 
 	  def get_order_status()
-	  	{ drink: @drink, name: @name }.to_json
+	  	'#{name} has ordered a #{drink}'
+	  	#{ drink: @drink, name: @name }.to_json
 	  end
 	end
 end
