@@ -1,0 +1,1 @@
+This is a slack plugin for team coffee runs
