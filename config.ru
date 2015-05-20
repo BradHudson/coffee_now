@@ -1,2 +1,2 @@
 require './coffee.rb'
-run CoffeeNow::CoffeeNowApplication
+run CoffeeNow::CoffeeNowApp
